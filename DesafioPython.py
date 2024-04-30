@@ -36,7 +36,7 @@ while True:
         case '2':
             saque = float(input('Digite o valor do saque: R$'))
             if saque > 0:
-                if saque < saldo:
+                if saque <= saldo:
                     if saque <= 500: 
                         if n_saques < MAX_SAQUES:
                             saldo -= saque 
